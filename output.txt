@@ -1,0 +1,95 @@
+FPTree Algorithm
+Frequent items:  52
+['CRfair']->8
+['StudentNo']->7
+['CRfair', 'StudentNo']->4
+['StudentYes']->7
+['CRfair', 'StudentYes']->4
+['CRexc']->6
+['StudentNo', 'CRexc']->3
+['StudentYes', 'CRexc']->3
+['IncomeMed']->6
+['StudentNo', 'IncomeMed']->4
+['CRfair', 'IncomeMed']->3
+['StudentNo', 'CRfair', 'IncomeMed']->2
+['CRexc', 'IncomeMed']->3
+['StudentNo', 'CRexc', 'IncomeMed']->2
+['StudentYes', 'IncomeMed']->2
+['Age≤30']->5
+['CRfair', 'Age≤30']->3
+['StudentNo', 'Age≤30']->3
+['CRfair', 'StudentNo', 'Age≤30']->2
+['CRexc', 'Age≤30']->2
+['IncomeMed', 'Age≤30']->2
+['StudentYes', 'Age≤30']->2
+['Age>40']->5
+['CRfair', 'Age>40']->3
+['IncomeMed', 'Age>40']->3
+['CRfair', 'IncomeMed', 'Age>40']->2
+['StudentYes', 'Age>40']->3
+['CRfair', 'StudentYes', 'Age>40']->2
+['StudentNo', 'Age>40']->2
+['IncomeMed', 'StudentNo', 'Age>40']->2
+['CRexc', 'Age>40']->2
+['IncomeHigh']->4
+['CRfair', 'IncomeHigh']->3
+['StudentNo', 'IncomeHigh']->3
+['CRfair', 'StudentNo', 'IncomeHigh']->2
+['Age≤30', 'IncomeHigh']->2
+['StudentNo', 'Age≤30', 'IncomeHigh']->2
+['Age31-40']->4
+['CRfair', 'Age31-40']->2
+['StudentNo', 'Age31-40']->2
+['IncomeHigh', 'Age31-40']->2
+['CRfair', 'IncomeHigh', 'Age31-40']->2
+['StudentYes', 'Age31-40']->2
+['CRexc', 'Age31-40']->2
+['IncomeLow']->4
+['StudentYes', 'IncomeLow']->4
+['CRfair', 'IncomeLow']->2
+['StudentYes', 'CRfair', 'IncomeLow']->2
+['Age>40', 'IncomeLow']->2
+['StudentYes', 'Age>40', 'IncomeLow']->2
+['CRexc', 'IncomeLow']->2
+['StudentYes', 'CRexc', 'IncomeLow']->2
+
+Association Rules:
+['CRfair', 'StudentYes']->['yes'] (s=0.29 c=1.0)
+['StudentYes', 'IncomeMed']->['yes'] (s=0.14 c=1.0)
+['StudentNo', 'Age≤30']->['no'] (s=0.21 c=1.0)
+['CRfair', 'StudentNo', 'Age≤30']->['no'] (s=0.14 c=1.0)
+['StudentYes', 'Age≤30']->['yes'] (s=0.14 c=1.0)
+['CRfair', 'Age>40']->['yes'] (s=0.21 c=1.0)
+['CRfair', 'IncomeMed', 'Age>40']->['yes'] (s=0.14 c=1.0)
+['CRfair', 'StudentYes', 'Age>40']->['yes'] (s=0.14 c=1.0)
+['CRexc', 'Age>40']->['no'] (s=0.14 c=1.0)
+['Age≤30', 'IncomeHigh']->['no'] (s=0.14 c=1.0)
+['StudentNo', 'Age≤30', 'IncomeHigh']->['no'] (s=0.14 c=1.0)
+['Age31-40']->['yes'] (s=0.29 c=1.0)
+['CRfair', 'Age31-40']->['yes'] (s=0.14 c=1.0)
+['StudentNo', 'Age31-40']->['yes'] (s=0.14 c=1.0)
+['IncomeHigh', 'Age31-40']->['yes'] (s=0.14 c=1.0)
+['CRfair', 'IncomeHigh', 'Age31-40']->['yes'] (s=0.14 c=1.0)
+['StudentYes', 'Age31-40']->['yes'] (s=0.14 c=1.0)
+['CRexc', 'Age31-40']->['yes'] (s=0.14 c=1.0)
+['CRfair', 'IncomeLow']->['yes'] (s=0.14 c=1.0)
+['StudentYes', 'CRfair', 'IncomeLow']->['yes'] (s=0.14 c=1.0)
+['StudentYes']->['yes'] (s=0.43 c=0.86)
+['CRfair']->['yes'] (s=0.43 c=0.75)
+['IncomeLow']->['yes'] (s=0.21 c=0.75)
+['StudentYes', 'IncomeLow']->['yes'] (s=0.21 c=0.75)
+['StudentNo', 'CRexc']->['no'] (s=0.14 c=0.67)
+['CRfair', 'Age≤30']->['no'] (s=0.14 c=0.67)
+['StudentNo', 'IncomeHigh']->['no'] (s=0.14 c=0.67)
+['StudentYes', 'CRexc']->['yes'] (s=0.14 c=0.67)
+['IncomeMed']->['yes'] (s=0.29 c=0.67)
+['CRfair', 'IncomeMed']->['yes'] (s=0.14 c=0.67)
+['CRexc', 'IncomeMed']->['yes'] (s=0.14 c=0.67)
+['IncomeMed', 'Age>40']->['yes'] (s=0.14 c=0.67)
+['StudentYes', 'Age>40']->['yes'] (s=0.14 c=0.67)
+['CRfair', 'IncomeHigh']->['yes'] (s=0.14 c=0.67)
+['Age≤30']->['no'] (s=0.21 c=0.6)
+['Age>40']->['yes'] (s=0.21 c=0.6)
+
+Prediction:  yes 
+Rule used:  ['CRfair', 'StudentYes']->['yes'] (s=0.29 c=1.0)
